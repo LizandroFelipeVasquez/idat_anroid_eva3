@@ -5,10 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment"
+    android:background="@color/white"
     >
+
+
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/rebajas_homeapp" />
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"/>
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/app_bar"
             style="@style/widget.shop.Toolbar"
@@ -16,57 +26,143 @@
             android:layout_height="56dp"
             app:title="@string/app_name"
             app:navigationIcon="@drawable/ic_baseline_menu_24"/>
-    </com.google.android.material.appbar.AppBarLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-        <TextView
-            android:layout_width="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_Product"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Home App"
-            android:textSize="24sp"
-            />
+            android:layout_margin="4dp"
+            android:hint="@string/Search"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_baseline_search_24"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_Product_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="239dp"
+                android:inputType="text"
+                android:maxLines="15"
+                android:background="@color/white"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="315dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/product"/>
+
     <com.google.android.material.card.MaterialCardView
         android:layout_width="180dp"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="210dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="70dp"
-        app:cardBackgroundColor="@color/purple_200"
+        android:layout_marginTop="345dp"
         app:cardCornerRadius="4dp"
         app:cardElevation="@dimen/cardview_default_elevation">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/cap"
             android:gravity="bottom"
-            android:background="@color/purple_500"
             android:orientation="vertical"
-            android:padding="8dp"
-            >
+            android:padding="8dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
-                android:text="@string/product_title"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="@string/product_description"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"/>
-
+                android:text="@string/cap"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
         </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="178dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="504dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="@dimen/cardview_default_elevation">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/t_shirt"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/shirt"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="175dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="504dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="@dimen/cardview_default_elevation">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jeans"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/jeans"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="345dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="@dimen/cardview_default_elevation">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/calzado"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/Shoes"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 </FrameLayout>

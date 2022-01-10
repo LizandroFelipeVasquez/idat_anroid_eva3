@@ -1,11 +1,15 @@
 <resources>
-    <string name="app_name">FootShop</string>
+    <string name="app_name">URBAN SHOP</string>
     <string name="Login_username">Username</string>
     <string name="Login_password">Password</string>
     <string name="Login_button">Login</string>
     <string name="Login_cancel">Cancel</string>
-    <string name="product_title">Titulo</string>
-    <string name="product_description">Este producto es nuevo</string>
+    <string name="product">PRODUCTOS</string>
     <string name="product_price">Precio</string>
     <string name="Login_error_message">La contraseña debe contener 6 caracteres</string>
+    <string name="Shoes">Calzados</string>
+    <string name="cap">Gorros</string>
+    <string name="shirt">Polos</string>
+    <string name="jeans">Jeans</string>
+    <string name="Search">Search Product</string>
 </resources>
