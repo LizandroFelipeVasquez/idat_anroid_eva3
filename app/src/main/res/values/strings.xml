@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Ev3</string>
+    <string name="app_name">FootShop</string>
+    <string name="Login_username">Username</string>
+    <string name="Login_password">Password</string>
+    <string name="Login_button">Login</string>
+    <string name="Login_cancel">Cancel</string>
+    <string name="Login_error_message">La contraseña debe contener 6 caracteres</string>
 </resources>
