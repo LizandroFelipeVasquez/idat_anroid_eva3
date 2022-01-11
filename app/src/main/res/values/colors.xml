@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#ffd54f</color>
     <color name="secondary">#ffc107</color>
+    <color name="night_mode">#90a4ae</color>
 </resources>

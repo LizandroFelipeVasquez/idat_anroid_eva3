@@ -12,4 +12,6 @@
     <string name="shirt">Polos</string>
     <string name="jeans">Jeans</string>
     <string name="Search">Search Product</string>
+    <string name="Setting">Perfil</string>
+    <string name="user">Felipe Vasquez Anaya</string>
 </resources>

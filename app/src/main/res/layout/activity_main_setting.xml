@@ -6,19 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@color/secondary">
-    
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        style="@style/widget.shop.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:title="@string/Setting"
+        app:navigationIcon="@drawable/ic_baseline_menu_24"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
+
         <androidx.constraintlayout.utils.widget.ImageFilterView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:padding="20dp"
-            android:src="@drawable/seting"/>
+            android:padding="20dp" />
+
+
     </RelativeLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/seting"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/user"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="18dp"
+                android:text="DIRECCION: Flora Tristan, La molina"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="10dp"
+                android:text="DNI:                76043558"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="10dp"
+                android:text="TELEFONO:   982492517"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginEnd="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src=""
+                        android:padding="13dp"
+
+                        />
+                </RelativeLayout>
+                
+                
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
     
 
 </LinearLayout>
